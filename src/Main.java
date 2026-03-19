@@ -12,7 +12,13 @@ public class Main {
         System.out.println(Arrays.deepToString(array));
 
         StatisticsHelper sh = new StatisticsHelper(array[0]);
-        System.out.println(sh.toString());
+        System.out.println(sh);
+
+        StatisticsHelper sh1 = new StatisticsHelper(array[1]);
+        System.out.println(sh1);
+
+        StatisticsHelper sh2 = new StatisticsHelper(array[2]);
+        System.out.println(sh2);
     }
     public static double dist(int[] x, int[] y) {
         double[] result = new double[x.length];
