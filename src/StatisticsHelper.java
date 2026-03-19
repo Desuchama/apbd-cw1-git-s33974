@@ -26,6 +26,14 @@ public class StatisticsHelper {
             }
         return result;
     }
+    public int calculateMin(int[] values) {
+        int result = values[0];
+        for (int i = 1; i < values.length; i++) {
+            if (result>values[i])
+                result = values[i];
+        }
+        return result;
+    }
     public String toString(){
         return average + " is the average of: " + Arrays.toString(data);
     }
