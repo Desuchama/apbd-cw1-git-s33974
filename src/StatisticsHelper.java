@@ -4,11 +4,13 @@ public class StatisticsHelper {
     public double average;
     public int[] data;
     public int max;
+    public int min;
 
     public StatisticsHelper(int[] input){
         this.data = input;
         this.average = calculateAverage(input);
         this.max = calculateMax(input);
+        this.min = calculateMin(input);
     }
     public double calculateAverage(int[] values){
         double result = 0;
