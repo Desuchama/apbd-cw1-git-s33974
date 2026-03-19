@@ -2,9 +2,6 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        int[] X = {10, 12}, Y = {14, 15};
-
-        System.out.println(dist(new int[] {3, 5}, Y));
 
         int[] X1 = new int[4], X2 = new int[4], X3 = new int[4], X4 = new int[4];
         int[][] array = new int[][] {X1, X2, X3, X4};
@@ -18,7 +15,7 @@ public class Main {
         System.out.println(sh1);
 
         StatisticsHelper sh2 = new StatisticsHelper(array[2]);
-        System.out.println(sh2);
+        System.out.println(dist(X1, X2));
     }
     public static double dist(int[] x, int[] y) {
         double[] result = new double[x.length];
