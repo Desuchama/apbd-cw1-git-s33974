@@ -16,6 +16,14 @@ public class StatisticsHelper {
         result /= values.length;
         return result;
     }
+    public int CalculateMax(int[] values){
+        int result = 0;
+        for (int i = 0; i < values.length; i++) {
+            if (result<values[i])
+                result = values[i];
+            }
+        return result;
+    }
     public String toString(){
         return average + " is the average of: " + Arrays.toString(data);
     }
