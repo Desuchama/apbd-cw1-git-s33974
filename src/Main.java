@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         double[] X = {10, 12}, Y = {14, 15};
@@ -6,7 +8,8 @@ public class Main {
 
         double[] X1 = new double[4], X2 = new double[4], X3 = new double[4], X4 = new double[4];
         double[][] array = new double[][] {X1, X2, X3, X4};
-        System.out.println(array.toString());
+        randomDoubleGenerator(array);
+        System.out.println(Arrays.deepToString(array));
     }
     public static double dist(double[] x, double[] y) {
         double[] result = new double[x.length];
@@ -18,5 +21,12 @@ public class Main {
             sum += result[i];
         }
         return Math.sqrt(sum);
+    }
+    public static void randomDoubleGenerator(double[][] arr){
+        for(int i = 0; i< arr.length; i++){
+            for(int j = 0; j< arr[i].length; j++){
+                arr[i][j] = Math.random();
+            }
+        }
     }
 }
