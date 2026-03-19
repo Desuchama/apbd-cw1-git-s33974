@@ -1,17 +1,13 @@
+import java.util.Arrays;
+
 public class StatisticsHelper {
     public double average;
-    public double[] data;
+    public int[] data;
 
-    public StatisticsHelper(double[] input){
+    public StatisticsHelper(int[] input){
         this.data = input;
-        this.average = calculateAverage(input);
     }
-    public double calculateAverage(double[] input) {
-        double result = 0;
-        for (int i = 0; i < input.length; i++) {
-            result += input[i];
-        }
-        result /= input.length;
-        return result;
+    public String toString(){
+        return average + " is the average of: " + Arrays.toString(data);
     }
 }
