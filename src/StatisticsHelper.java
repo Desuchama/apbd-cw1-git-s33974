@@ -37,6 +37,9 @@ public class StatisticsHelper {
         return result;
     }
     public String toString(){
-        return average + " is the average of: " + Arrays.toString(data);
+        return "Data for: " + Arrays.toString(data) +
+                "\nAverage: " + average +
+                "\nMax: " + max +
+                "\nMin: " + min;
     }
 }
