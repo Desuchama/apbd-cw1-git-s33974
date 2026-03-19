@@ -11,7 +11,7 @@ public class Main {
         randomDoubleGenerator(array);
         System.out.println(Arrays.deepToString(array));
 
-        StatisticsHelper sh = new StatisticsHelper(array[0]);
+        StatisticsHelper sh = new StatisticsHelper(array[3]);
         System.out.println(sh);
 
         StatisticsHelper sh1 = new StatisticsHelper(array[1]);
