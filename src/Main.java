@@ -10,6 +10,9 @@ public class Main {
         int[][] array = new int[][] {X1, X2, X3, X4};
         randomDoubleGenerator(array);
         System.out.println(Arrays.deepToString(array));
+
+        StatisticsHelper sh = new StatisticsHelper(array[0]);
+        System.out.println(sh.toString());
     }
     public static double dist(int[] x, int[] y) {
         double[] result = new double[x.length];
